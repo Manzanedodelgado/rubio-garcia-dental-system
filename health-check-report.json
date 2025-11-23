@@ -1,0 +1,126 @@
+{
+  "system": {
+    ".env.example": "✅",
+    "package.json": "✅",
+    "next.config.js": "✅",
+    "tsconfig.json": "✅",
+    "NEXT_PUBLIC_SUPABASE_URL": "❌",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "❌",
+    "SUPABASE_SERVICE_ROLE_KEY": "❌",
+    "SQLSERVER_HOST": "❌",
+    "SQLSERVER_DATABASE": "❌",
+    "LLM_HOST": "❌"
+  },
+  "services": {
+    "services/whatsapp.ts": {
+      "exists": true,
+      "size": 10376,
+      "status": "✅"
+    },
+    "services/supabase-pacientes.ts": {
+      "exists": true,
+      "size": 13466,
+      "status": "✅"
+    },
+    "services/supabase-citas.ts": {
+      "exists": true,
+      "size": 18840,
+      "status": "✅"
+    },
+    "services/supabase-whatsapp.ts": {
+      "exists": true,
+      "size": 16340,
+      "status": "✅"
+    },
+    "services/ai.ts": {
+      "exists": true,
+      "size": 14428,
+      "status": "✅"
+    },
+    "services/sql-server.ts": {
+      "exists": true,
+      "size": 17424,
+      "status": "✅"
+    },
+    "services/advanced-gesden-sync.ts": {
+      "exists": true,
+      "size": 17575,
+      "status": "✅"
+    }
+  },
+  "database": {
+    "database/schema_pacientes.sql": {
+      "exists": true,
+      "size": 16332,
+      "status": "✅"
+    },
+    "database/schema_whatsapp.sql": {
+      "exists": true,
+      "size": 15659,
+      "status": "✅"
+    },
+    "database/schema_ai.sql": {
+      "exists": true,
+      "size": 17745,
+      "status": "✅"
+    },
+    "database/schema_historia_clinica.sql": {
+      "exists": true,
+      "size": 18713,
+      "status": "✅"
+    },
+    "database/schema_configuracion.sql": {
+      "exists": true,
+      "size": 16543,
+      "status": "✅"
+    },
+    "database/schema_contabilidad.sql": {
+      "exists": true,
+      "size": 15360,
+      "status": "✅"
+    },
+    "database/schema_gestion_facturas.sql": {
+      "exists": true,
+      "size": 18801,
+      "status": "✅"
+    }
+  },
+  "integrations": {
+    "pages/api/pacientes/index.ts": {
+      "exists": true,
+      "size": 3267,
+      "status": "✅"
+    },
+    "pages/api/citas/index.ts": {
+      "exists": true,
+      "size": 4499,
+      "status": "✅"
+    },
+    "pages/api/whatsapp/connect.ts": {
+      "exists": true,
+      "size": 2208,
+      "status": "✅"
+    },
+    "pages/api/gesden/status.ts": {
+      "exists": true,
+      "size": 4465,
+      "status": "✅"
+    },
+    "components/Dashboard.tsx": {
+      "exists": true,
+      "size": 16846,
+      "status": "✅"
+    },
+    "components/WhatsAppChat.tsx": {
+      "exists": true,
+      "size": 17510,
+      "status": "✅"
+    },
+    "components/WidgetIAConversacional.tsx": {
+      "exists": true,
+      "size": 17190,
+      "status": "✅"
+    }
+  },
+  "status": "good"
+}
