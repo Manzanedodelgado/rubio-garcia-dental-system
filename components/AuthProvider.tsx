@@ -16,8 +16,17 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const [user, setUser] = useState<UserType | null>(null)
-  const [loading, setLoading] = useState(true)
+  const [user, setUser] = useState<UserType | null>({
+    id: 'demo-admin',
+    email: 'admin@rubiogarciadental.com',
+    name: 'Dr. Rubio García',
+    role: 'admin',
+    permissions: ['all'],
+    is_active: true,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString()
+  })
+  const [loading, setLoading] = useState(false) // Inicializar en false para demo
 
   useEffect(() => {
     // Get initial session
