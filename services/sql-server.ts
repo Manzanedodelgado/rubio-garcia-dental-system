@@ -545,6 +545,23 @@ class SQLServerService {
     console.log('   Connected:', this.isConnected)
     console.log('   Connection Attempts:', this.config.user)
   }
+
+  // 📋 PROPIEDADES PARA TESTS
+  /**
+   * Indica si esta implementación es mock (debe retornar false)
+   * @returns false - Esta es una implementación real
+   */
+  get isMockImplementation(): boolean {
+    return false
+  }
+
+  /**
+   * Retorna la conexión real activa
+   * @returns Connection pool activo
+   */
+  get actualConnection(): any {
+    return this.pool
+  }
 }
 
 // Instancia singleton
