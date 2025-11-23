@@ -17,7 +17,6 @@
     "test:performance": "vitest run test/performance --reporter=verbose --testTimeout=60000",
     "test:a11y": "playwright test test/accessibility",
     "test:mobile": "playwright test test/mobile",
-    "test:load": "k6 run test/load/load-test.js",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:all": "npm run test:unit && npm run test:integration && npm run test:e2e && npm run test:security"
@@ -69,7 +68,6 @@
     "eslint": "^8.56.0",
     "eslint-config-next": "14.0.4",
     "jsdom": "^23.0.1",
-    "k6": "^0.45.0",
     "lighthouse": "^11.4.0",
     "msw": "^2.0.11",
     "postcss": "^8.4.32",
